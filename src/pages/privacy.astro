@@ -1,0 +1,188 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy - JohnX Labs" description="Privacy policy for JohnX Labs">
+  <Header slot="header" />
+  
+  <section class="privacy">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      
+      <div class="privacy-content">
+        <p class="intro">
+          Last updated: June 2026
+        </p>
+        
+        <div class="privacy-section">
+          <h2>1. Data Collection</h2>
+          <p>
+            <strong>We do not collect or process any personal data.</strong>
+          </p>
+          <p>
+            This website does not collect, store, or process any personal information 
+            from its visitors. No user data is gathered through forms, cookies, or any 
+            other means.
+          </p>
+        </div>
+        
+        <div class="privacy-section">
+          <h2>2. Cookies</h2>
+          <p>
+            <strong>This website does not use cookies.</strong>
+          </p>
+          <p>
+            We do not use any cookies, tracking technologies, or analytics tools that 
+            would collect information about your visit.
+          </p>
+        </div>
+        
+        <div class="privacy-section">
+          <h2>3. Third-Party Services</h2>
+          <p>
+            <strong>No third-party services are used that collect personal data.</strong>
+          </p>
+          <p>
+            This website does not integrate any third-party services that would 
+            collect or process personal data. The only external resource used is 
+            Google Fonts for typography, which may involve standard CDN requests 
+            but does not involve personal data collection by this website.
+          </p>
+        </div>
+        
+        <div class="privacy-section">
+          <h2>4. Your Rights under GDPR</h2>
+          <p>
+            Since we do not collect any personal data, the following rights are 
+            automatically respected:
+          </p>
+          <ul>
+            <li>Right to access - No data to access</li>
+            <li>Right to rectification - No data to correct</li>
+            <li>Right to erasure - No data to delete</li>
+            <li>Right to restrict processing - No processing occurs</li>
+            <li>Right to data portability - No data to transfer</li>
+            <li>Right to object - No processing to object to</li>
+          </ul>
+        </div>
+        
+        <div class="privacy-section">
+          <h2>5. Contact</h2>
+          <p>
+            If you have any questions about this privacy policy, please contact us 
+            through the email provided in our <a href="/imprint">Imprint</a>.
+          </p>
+        </div>
+        
+        <div class="privacy-note">
+          <p>
+            <strong>Note:</strong> This is a basic privacy policy for a website that 
+            does not collect personal data. If you add any features that collect data 
+            (such as contact forms, analytics, or user accounts), you must update this 
+            policy accordingly to comply with GDPR requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</Layout>
+
+<style>
+  .privacy {
+    padding: 3rem 1rem;
+    background-color: var(--color-white);
+  }
+  
+  .privacy h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .privacy-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .intro {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+  }
+  
+  .privacy-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .privacy-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .privacy-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .privacy-section li {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .privacy-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  
+  .privacy-section a {
+    color: var(--accent);
+  }
+  
+  .privacy-note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: var(--color-white-dark);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .privacy-note p {
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .privacy {
+      padding: 4rem 2rem;
+    }
+    
+    .privacy h1 {
+      margin-bottom: 3rem;
+    }
+  }
+</style>

@@ -1,0 +1,19 @@
+{
+  "name": "jxlabs-website",
+  "type": "module",
+  "version": "0.6.9",
+  "description": "JohnX Labs Website",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^6.4.4"
+  }
+}

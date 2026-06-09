@@ -1,0 +1,137 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Imprint - JohnX Labs" description="Legal imprint information for JohnX Labs">
+  <Header slot="header" />
+  
+  <section class="imprint">
+    <div class="container">
+      <h1>Imprint</h1>
+      
+      <div class="imprint-content">
+        <h2>Information according to § 5 TMG</h2>
+        
+        <div class="imprint-section">
+          <h3>Company Information</h3>
+          <p>
+            <strong>JohnX Labs</strong><br />
+            [Company Name Placeholder]<br />
+            [Street Address Placeholder]<br />
+            [Postal Code] [City Placeholder]<br />
+            Germany
+          </p>
+        </div>
+        
+        <div class="imprint-section">
+          <h3>Contact</h3>
+          <p>
+            Phone: [Phone Number Placeholder]<br />
+            Email: <a href="mailto:contact@jxlabs.example">contact@jxlabs.example</a>
+          </p>
+        </div>
+        
+        <div class="imprint-section">
+          <h3>Registration</h3>
+          <p>
+            Register Court: [Register Court Placeholder]<br />
+            Registration Number: [Registration Number Placeholder]
+          </p>
+        </div>
+        
+        <div class="imprint-section">
+          <h3>VAT Identification Number</h3>
+          <p>
+            VAT ID according to §27a Umsatzsteuergesetz:<br />
+            [VAT ID Number Placeholder]
+          </p>
+        </div>
+        
+        <div class="imprint-section">
+          <h3>Responsible for content according to § 55 Abs. 2 RStV</h3>
+          <p>
+            [Responsible Person Name Placeholder]<br />
+            [Address Placeholder]
+          </p>
+        </div>
+      </div>
+      
+      <p class="disclaimer">
+        <em>
+          Note: This is a placeholder imprint. Please replace all bracketed information 
+          with your actual company details before deploying to production.
+        </em>
+      </p>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</Layout>
+
+<style>
+  .imprint {
+    padding: 3rem 1rem;
+    background-color: var(--color-white);
+  }
+  
+  .imprint h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .imprint-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .imprint-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .imprint-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .imprint-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 0.75rem;
+  }
+  
+  .imprint-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  .imprint-section a {
+    color: var(--accent);
+  }
+  
+  .disclaimer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: var(--color-white-dark);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .imprint {
+      padding: 4rem 2rem;
+    }
+    
+    .imprint h1 {
+      margin-bottom: 4rem;
+    }
+  }
+</style>

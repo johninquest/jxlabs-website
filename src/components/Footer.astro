@@ -1,0 +1,71 @@
+---
+// Footer component for JohnX Labs website
+// Contains imprint and privacy links
+---
+
+<footer class="footer">
+  <div class="footer-container">
+    <nav class="footer-nav" aria-label="Legal links">
+      <a href="/imprint" class="footer-link">Imprint</a>
+      <a href="/privacy" class="footer-link">Privacy</a>
+    </nav>
+    <p class="copyright">
+      &copy; {new Date().getFullYear()} JohnX Labs. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-white);
+    border-top: 1px solid var(--border);
+    padding: 2rem 1rem;
+    margin-top: auto;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-link {
+    font-family: var(--font-inter);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: var(--color-black);
+  }
+  
+  .copyright {
+    font-family: var(--font-inter);
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .footer {
+      padding: 2.5rem 2rem;
+    }
+    
+    .footer-link {
+      font-size: 1rem;
+    }
+    
+    .copyright {
+      font-size: 0.9rem;
+    }
+  }
+</style>
