@@ -1,7 +1,7 @@
 {
   "name": "jxlabs-website",
   "type": "module",
-  "version": "0.6.9",
+  "version": "0.6.11",
   "description": "JohnX Labs Website",
   "engines": {
     "node": ">=22.12.0"
