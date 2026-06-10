@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="200" height="200" role="img">
+  <title>johnx labs — experiment flask</title>
+  <defs>
+
+    <filter id="glass-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blurred"/>
+      <feMerge>
+        <feMergeNode in="blurred"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="flask-clip">
+      <path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Z"/>
+    </clipPath>
+
+    <linearGradient id="liquid-fill" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#1a1a1a"/>
+      <stop offset="55%"  stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#4a9eff" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="flask-color" x1="0" y1="0" x2="0.2" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#e8e8e8"/>
+      <stop offset="100%" stop-color="#666666"/>
+    </linearGradient>
+
+  </defs>
+
+  <g clip-path="url(#flask-clip)">
+
+    <rect x="0" y="-380" width="960" height="290" fill="url(#liquid-fill)" opacity="0.92">
+      <animate attributeName="y"
+               values="-360;-395;-360"
+               dur="4s" repeatCount="indefinite"
+               calcMode="spline"
+               keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </rect>
+
+    <circle cx="345" cy="-215" r="26" fill="#4a9eff" opacity="0">
+      <animate attributeName="cy"    values="-215;-780" dur="2.9s" repeatCount="indefinite" begin="0s"   calcMode="spline" keySplines="0.2 0.05 0.8 0.95"/>
+      <animate attributeName="r"     values="26;15"     dur="2.9s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="opacity" values="0;0.8;0.65;0" keyTimes="0;0.07;0.85;1" dur="2.9s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <circle cx="595" cy="-240" r="18" fill="#6bb3ff" opacity="0">
+      <animate attributeName="cy"    values="-240;-770" dur="2.3s" repeatCount="indefinite" begin="1.5s" calcMode="spline" keySplines="0.2 0.05 0.8 0.95"/>
+      <animate attributeName="r"     values="18;10"     dur="2.3s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="opacity" values="0;0.7;0.55;0" keyTimes="0;0.07;0.85;1" dur="2.3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle cx="468" cy="-260" r="13" fill="#8cc8ff" opacity="0">
+      <animate attributeName="cy"    values="-260;-775" dur="3.3s" repeatCount="indefinite" begin="0.9s" calcMode="spline" keySplines="0.2 0.05 0.8 0.95"/>
+      <animate attributeName="r"     values="13;7"      dur="3.3s" repeatCount="indefinite" begin="0.9s"/>
+      <animate attributeName="opacity" values="0;0.65;0.5;0" keyTimes="0;0.07;0.85;1" dur="3.3s" repeatCount="indefinite" begin="0.9s"/>
+    </circle>
+
+    <circle cx="415" cy="-225" r="9" fill="#4a9eff" opacity="0">
+      <animate attributeName="cy"    values="-225;-750" dur="2.1s" repeatCount="indefinite" begin="2.1s" calcMode="spline" keySplines="0.2 0.05 0.8 0.95"/>
+      <animate attributeName="opacity" values="0;0.6;0.45;0" keyTimes="0;0.07;0.85;1" dur="2.1s" repeatCount="indefinite" begin="2.1s"/>
+    </circle>
+
+    <circle cx="520" cy="-198" r="7" fill="#6bb3ff" opacity="0">
+      <animate attributeName="cy"    values="-198;-740" dur="2.5s" repeatCount="indefinite" begin="3.2s" calcMode="spline" keySplines="0.2 0.05 0.8 0.95"/>
+      <animate attributeName="opacity" values="0;0.55;0.4;0" keyTimes="0;0.07;0.85;1" dur="2.5s" repeatCount="indefinite" begin="3.2s"/>
+    </circle>
+
+  </g>
+
+  <path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
+        fill="url(#flask-color)"
+        filter="url(#glass-glow)">
+    <animate attributeName="opacity"
+             values="0.78;1;0.78"
+             dur="3.5s" repeatCount="indefinite"
+             calcMode="spline"
+             keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </path>
+
+</svg>

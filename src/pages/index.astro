@@ -1,105 +1,76 @@
 ---
-import Layout from '../components/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../components/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="JohnX Labs - Digital Experiments, ..." description="JohnX Labs Software Lab - Innovative solutions for modern challenges">
+<Layout
+  title="JohnX Labs - Digital Experiments, ..."
+  description="JohnX Labs Software Lab - Innovative solutions for modern challenges"
+>
   <Header slot="header" />
-  
+
   <section class="hero">
     <div class="container">
-      <h3 class="hero-title">JohnX Labs</h3>
       <p class="hero-subtitle">Digital Experiments, Real Solutions</p>
-<!--       <p class="hero-description">
-        Building innovative solutions for modern challenges. 
-        We craft clean, efficient software that makes a difference.
-      </p> -->
+      <div class="hero-icon">
+        <img
+          src="/johnx-labs-flask.svg"
+          alt="JohnX Labs experiment flask"
+          width="120"
+          height="120"
+        />
+      </div>
     </div>
   </section>
-  
-<!--   <section class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        JXLabs is a software laboratory focused on developing cutting-edge 
-        applications and solutions. We believe in clean code, minimal design, 
-        and user-focused experiences.
-      </p>
-      <p>
-        Our approach combines technical excellence with creative problem-solving 
-        to deliver software that truly matters.
-      </p>
-    </div>
-  </section> -->
-  
+
   <Footer slot="footer" />
 </Layout>
 
 <style>
   .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
     text-align: center;
     padding: 4rem 1rem;
     background-color: var(--color-white);
   }
-  
-  .hero-title {
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    font-weight: 700;
-    color: var(--color-black);
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.03em;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .hero-icon {
+    margin-bottom: 2rem;
+  }
+
+  .hero-icon img {
+    display: block;
+    width: clamp(80px, 15vw, 140px);
+    height: auto;
+  }
+
   .hero-subtitle {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 400;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
   }
-  
-  .hero-description {
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-  
-  .about {
-    padding: 4rem 1rem;
-    background-color: white;
-  }
-  
-  .about h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .about p {
-    max-width: 700px;
-    margin: 0 auto 1.5rem;
-    text-align: center;
-    line-height: 1.7;
-  }
-  
+
   @media (min-width: 768px) {
     .hero {
+      min-height: 75vh;
       padding: 6rem 2rem;
     }
-    
-    .about {
-      padding: 5rem 2rem;
-    }
   }
-  
+
   @media (min-width: 1024px) {
     .hero {
+      min-height: 80vh;
       padding: 8rem 3rem;
-    }
-    
-    .about {
-      padding: 6rem 3rem;
     }
   }
 </style>
